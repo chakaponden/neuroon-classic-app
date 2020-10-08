@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@+id/chart_container" android:layout_width="match_parent" android:layout_height="280dp" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginRight="@dimen/activity_horizontal_margin">
+            <android.support.percent.PercentRelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@+id/titles" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="16dp">
+                    <Space android:layout_width="wrap_content" android:layout_height="40dp"/>
+                    <com.inteliclinic.neuroon.views.ThinTextView android:textColor="@color/awake_stage" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="0dp" android:text="@string/wake" android:layout_weight="1"/>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="1">
+                        <com.inteliclinic.neuroon.views.ThinTextView android:textColor="@color/rem_stage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rem"/>
+                        <com.inteliclinic.neuroon.views.ThinTextView android:textSize="8sp" android:textColor="@color/text_normal_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mind_refresh"/>
+                    </LinearLayout>
+                    <com.inteliclinic.neuroon.views.ThinTextView android:textColor="@color/light_stage" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="0dp" android:text="@string/light" android:layout_weight="1"/>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="1">
+                        <com.inteliclinic.neuroon.views.ThinTextView android:textColor="@color/deep_stage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/deep"/>
+                        <com.inteliclinic.neuroon.views.ThinTextView android:textSize="8sp" android:textColor="@color/text_normal_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/body_refresh"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/times" android:layout_width="match_parent" android:layout_height="40dp" android:layout_toRightOf="@+id/titles" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+                    <com.inteliclinic.neuroon.views.LightTextView android:textColor="@color/blue_3054FA" android:layout_gravity="bottom" android:id="@+id/start_time" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                    <com.inteliclinic.neuroon.views.LightTextView android:textColor="@color/blue_3054FA" android:layout_gravity="bottom" android:id="@+id/end_time" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <com.inteliclinic.neuroon.views.charts.BarChartView android:id="@+id/bar_chart" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/titles" android:layout_below="@+id/times" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+                <View android:background="@color/light_grey_e8" android:layout_width="0.8dp" android:layout_height="match_parent" android:layout_alignLeft="@+id/bar_chart" android:layout_alignTop="@+id/bar_chart"/>
+                <View android:background="@color/light_grey_e8" android:layout_width="0.8dp" android:layout_height="match_parent" android:layout_alignTop="@+id/bar_chart" android:layout_alignRight="@+id/bar_chart"/>
+            </android.support.percent.PercentRelativeLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <Space android:layout_width="wrap_content" android:layout_height="40dp"/>
+                <FrameLayout android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="1">
+                    <Space android:layout_width="match_parent" android:layout_height="match_parent"/>
+                    <View android:layout_gravity="bottom" android:background="@color/light_grey_e8" android:layout_width="match_parent" android:layout_height="1dp"/>
+                </FrameLayout>
+                <FrameLayout android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="1">
+                    <View android:layout_gravity="bottom" android:background="@color/light_grey_e8" android:layout_width="match_parent" android:layout_height="1dp"/>
+                </FrameLayout>
+                <FrameLayout android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="1">
+                    <View android:layout_gravity="bottom" android:background="@color/light_grey_e8" android:layout_width="match_parent" android:layout_height="1dp"/>
+                </FrameLayout>
+                <FrameLayout android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="1">
+                    <View android:layout_gravity="bottom" android:background="@color/light_grey_e8" android:layout_width="match_parent" android:layout_height="1dp"/>
+                </FrameLayout>
+            </LinearLayout>
+        </FrameLayout>
+        <LinearLayout android:id="@+id/signal_container" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginTop="24dp" android:layout_marginRight="@dimen/activity_horizontal_margin">
+            <com.inteliclinic.neuroon.views.ThinTextView android:textColor="@color/text_normal_color" android:id="@+id/signal_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/signal" android:layout_centerVertical="true"/>
+            <com.inteliclinic.neuroon.views.charts.BarChartView android:gravity="center_vertical" android:id="@+id/signal_bar_chart" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1" android:layout_toRightOf="@+id/signal_title" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </LinearLayout>
+        <RelativeLayout android:id="@+id/overall_signal_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginTop="24dp" android:layout_marginRight="@dimen/activity_horizontal_margin">
+            <com.inteliclinic.neuroon.views.ThinTextView android:textColor="@color/text_normal_color" android:id="@+id/overall_signal_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/overall_signal" android:layout_centerVertical="true"/>
+            <com.inteliclinic.neuroon.views.ThinTextView android:textColor="@color/green_0CA993" android:gravity="center_vertical" android:id="@+id/overall_signal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="8dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <ImageView android:id="@+id/divider" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginTop="15dp" android:layout_marginRight="@dimen/activity_horizontal_margin" android:layout_marginBottom="15dp" android:src="@drawable/line_divide"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="220dp" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginRight="@dimen/activity_horizontal_margin">
+            <com.inteliclinic.neuroon.views.charts.CircleChartView android:layout_gravity="center_vertical" android:id="@+id/percent_chart" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp">
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16dp">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/fiolet"/>
+                    <com.inteliclinic.neuroon.views.ThinTextView android:textColor="@color/grey_8e" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="@string/deep"/>
+                    <com.inteliclinic.neuroon.views.ThinTextView android:textColor="@color/blue_3054FA" android:id="@+id/deep_percent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="@string/zero_percent"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16dp">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/darkblue"/>
+                    <com.inteliclinic.neuroon.views.ThinTextView android:textColor="@color/grey_8e" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="@string/rem"/>
+                    <com.inteliclinic.neuroon.views.ThinTextView android:textColor="@color/blue_3054FA" android:id="@+id/rem_percent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="@string/zero_percent"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16dp">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/blue"/>
+                    <com.inteliclinic.neuroon.views.ThinTextView android:textColor="@color/grey_8e" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="@string/light"/>
+                    <com.inteliclinic.neuroon.views.ThinTextView android:textColor="@color/blue_3054FA" android:id="@+id/light_percent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="@string/zero_percent"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/lightblue"/>
+                    <com.inteliclinic.neuroon.views.ThinTextView android:textColor="@color/grey_8e" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="@string/wake"/>
+                    <com.inteliclinic.neuroon.views.ThinTextView android:textColor="@color/blue_3054FA" android:id="@+id/wake_percent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="@string/zero_percent"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <com.inteliclinic.neuroon.views.ThinButton android:textSize="26sp" android:textColor="@android:color/white" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/delete_sleep" android:background="@drawable/button_duzy" android:paddingRight="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginBottom="16dp" android:text="@string/delete_sleep"/>
+    </LinearLayout>
+</ScrollView>

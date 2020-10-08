@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@+id/bottom" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <RelativeLayout android:gravity="bottom" android:layout_gravity="bottom" android:id="@+id/content" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/top_bar" android:background="@android:color/white" android:layout_width="wrap_content" android:layout_height="80dp">
+            <com.inteliclinic.neuroon.views.SwitchView android:id="@+id/custom_switch" android:layout_width="150dp" android:layout_height="0dp" android:layout_marginLeft="16dp" android:layout_alignTop="@+id/done" android:layout_alignBottom="@+id/done" app:on_textColor="@color/blue_3054FA" app:on_textSize="12sp" app:off_textColor="@color/blue_3054FA" app:off_textSize="12sp"/>
+            <ImageView android:id="@+id/done" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:src="@drawable/button_maly_standard" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            <com.inteliclinic.neuroon.views.ThinTextView android:textSize="18sp" android:textColor="@android:color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/done" android:layout_alignLeft="@+id/done" android:layout_alignTop="@+id/done" android:layout_alignRight="@+id/done" android:layout_alignBottom="@+id/done"/>
+        </RelativeLayout>
+        <FrameLayout android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="0dp" android:layout_below="@+id/top_bar" android:layout_alignTop="@+id/container" android:layout_alignBottom="@+id/container">
+            <ImageView android:layout_gravity="center" android:id="@+id/indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/blue_selection" android:scaleType="center"/>
+        </FrameLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/container" android:layout_width="match_parent" android:layout_height="240dp" android:layout_below="@+id/top_bar"/>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="-1dp" android:layout_marginBottom="-1dp" android:layout_below="@+id/top_bar" android:layout_alignTop="@+id/container" android:layout_alignBottom="@+id/container">
+            <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/shadow_top" android:scaleType="fitXY" android:adjustViewBounds="true"/>
+            <ImageView android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/shadow_bottom" android:scaleType="fitXY" android:adjustViewBounds="true"/>
+        </FrameLayout>
+    </RelativeLayout>
+</merge>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@drawable/bg_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar android:id="@+id/toolbar" android:background="?attr/colorPrimary" android:layout_width="match_parent" android:layout_height="@dimen/abc_action_bar_default_height_material" android:minHeight="?attr/actionBarSize">
+        <ImageView android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/back_button" android:paddingRight="@dimen/activity_horizontal_margin" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/arrow_left_grey"/>
+        <com.inteliclinic.neuroon.views.ThinTextView android:textSize="22sp" android:textColor="@color/grey_8e" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/general_info"/>
+    </android.support.v7.widget.Toolbar>
+    <com.inteliclinic.neuroon.views.ThinTextView android:textSize="32sp" android:textColor="@color/titleTextColor" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28dp" android:layout_marginBottom="16dp" android:text="@string/title_weight" android:layout_below="@+id/toolbar" android:layout_centerHorizontal="true"/>
+    <com.inteliclinic.neuroon.views.ThinTextView android:textColor="@color/text_normal_color" android:gravity="center" android:layout_gravity="center" android:id="@+id/text" android:paddingLeft="28dp" android:paddingRight="28dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="24dp" android:text="@string/use_either_metrics_or_customary_measure_system" android:layout_below="@+id/title" android:layout_centerHorizontal="true"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginRight="@dimen/activity_horizontal_margin" android:layout_marginBottom="16dp" android:layout_above="@+id/next" android:layout_below="@+id/text">
+        <FrameLayout android:id="@+id/normal_container" android:background="@android:color/black" android:layout_width="60dp" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:id="@+id/indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/blue_selection" android:scaleType="center"/>
+            <android.support.v7.widget.RecyclerView android:id="@+id/picker" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/shadow_top" android:scaleType="fitXY" android:adjustViewBounds="true"/>
+            <ImageView android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/shadow_bottom" android:scaleType="fitXY" android:adjustViewBounds="true"/>
+        </FrameLayout>
+        <LinearLayout android:gravity="bottom|center_vertical|center_horizontal|center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <com.inteliclinic.neuroon.views.LightTextView android:textSize="32sp" android:textColor="@color/blue_3054FA" android:gravity="center" android:id="@+id/height_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8dp"/>
+            <com.inteliclinic.neuroon.views.LightTextView android:textSize="32sp" android:textColor="@color/blue_3054FA" android:gravity="center" android:id="@+id/height_metrics" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16dp"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/masa"/>
+        </LinearLayout>
+        <FrameLayout android:id="@+id/metrics_container" android:background="@android:color/black" android:layout_width="60dp" android:layout_height="wrap_content" android:layout_above="@+id/next" android:layout_below="@+id/text" android:layout_alignParentRight="true">
+            <ImageView android:layout_gravity="center" android:id="@+id/metrics_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/blue_selection" android:scaleType="center"/>
+            <android.support.v7.widget.RecyclerView android:id="@+id/metrics_picker" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/shadow_top" android:scaleType="fitXY" android:adjustViewBounds="true"/>
+            <ImageView android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/shadow_bottom" android:scaleType="fitXY" android:adjustViewBounds="true"/>
+        </FrameLayout>
+    </LinearLayout>
+    <com.inteliclinic.neuroon.views.ThinButton android:textSize="26sp" android:textColor="@android:color/white" android:id="@+id/next" android:background="@drawable/button_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/next" android:layout_above="@+id/step_indicator" android:layout_centerHorizontal="true"/>
+    <LinearLayout android:id="@+id/step_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:layout_marginRight="20dp" android:layout_marginBottom="10dp" android:src="@drawable/odliczanie_puste"/>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:layout_marginRight="20dp" android:layout_marginBottom="10dp" android:src="@drawable/odliczanie_puste"/>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:layout_marginRight="20dp" android:layout_marginBottom="10dp" android:src="@drawable/odliczanie_puste"/>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:layout_marginRight="20dp" android:layout_marginBottom="10dp" android:src="@drawable/odliczanie_zaznaczone"/>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:layout_marginRight="20dp" android:layout_marginBottom="10dp" android:src="@drawable/odliczanie_puste"/>
+    </LinearLayout>
+</RelativeLayout>

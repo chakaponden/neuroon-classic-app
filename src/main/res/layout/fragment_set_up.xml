@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@drawable/bg_mask_guy" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/sign_up" android:layout_width="185dp" android:layout_height="wrap_content" android:layout_alignTop="@+id/log_in" android:layout_alignBottom="@+id/log_in" android:layout_alignParentLeft="true">
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_right_big_light"/>
+        <com.inteliclinic.neuroon.views.ThinTextView android:textSize="22sp" android:textColor="@color/text_normal_color" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="22dp" android:text="@string/join_nneuroon"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/log_in" android:layout_width="175dp" android:layout_height="wrap_content" android:layout_marginBottom="16dp" android:layout_above="@+id/questions" android:layout_alignParentRight="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_left_light"/>
+        <com.inteliclinic.neuroon.views.ThinTextView android:textSize="26sp" android:textColor="@color/text_normal_color" android:layout_gravity="right|center_vertical|center_horizontal|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="32dp" android:text="@string/sign_in"/>
+    </FrameLayout>
+    <com.inteliclinic.neuroon.views.ThinTextView android:textSize="18sp" android:textColor="@android:color/white" android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/questions" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:layout_marginBottom="4dp" android:text="@string/questions" android:layout_above="@+id/questions_btn" android:layout_alignParentRight="true"/>
+    <FrameLayout android:id="@+id/questions_btn" android:paddingBottom="16dp" android:layout_width="175dp" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_talk_with_us"/>
+        <com.inteliclinic.neuroon.views.ThinTextView android:textColor="@color/text_normal_color" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/talk_with_us" android:drawableLeft="@drawable/ic_talk_with_us" android:drawablePadding="8dp"/>
+    </FrameLayout>
+</RelativeLayout>

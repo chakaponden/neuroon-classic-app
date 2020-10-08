@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@drawable/mask_background" android:paddingLeft="32dp" android:paddingRight="32dp" android:layout_width="match_parent" android:layout_height="64dp">
+    <ImageView android:id="@+id/mask" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mask_drawable" android:layout_centerVertical="true"/>
+    <com.inteliclinic.neuroon.views.ThinTextView android:textSize="22sp" android:textColor="@drawable/mask_text_color" android:gravity="center" android:id="@+id/device_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:layout_toLeftOf="@+id/progress" android:layout_toRightOf="@+id/mask" android:layout_centerVertical="true"/>
+    <ProgressBar android:id="@+id/progress" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+</RelativeLayout>

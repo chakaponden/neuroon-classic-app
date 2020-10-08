@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="sleep_habits">
+        <item>@string/shift_worker</item>
+        <item>@string/pregnant_woman</item>
+        <item>@string/have_a_newborn_child</item>
+        <item>@string/frequent_flier</item>
+        <item>@string/taking_sleep_pills</item>
+        <item>@string/have_diagnosed_sleep_disorder</item>
+        <item>@string/epileptic</item>
+        <item>@string/irregular_sleep_schedule</item>
+        <item>@string/suffer_from_insomnia</item>
+        <item>@string/night_owl</item>
+        <item>@string/early_bird</item>
+    </array>
+</resources>

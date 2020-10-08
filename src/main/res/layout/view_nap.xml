@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@+id/nap_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginRight="16dp" android:layout_marginBottom="16dp"/>
+    <com.inteliclinic.neuroon.views.BoldTextView android:textColor="@color/violet_544B85" android:id="@+id/nap_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4dp" android:text="" android:layout_toRightOf="@+id/nap_image" android:layout_alignTop="@+id/nap_image"/>
+    <com.inteliclinic.neuroon.views.ThinTextView android:textColor="@color/grey_8e" android:id="@+id/nap_best_take" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/between_colon" android:layout_toRightOf="@+id/nap_image" android:layout_below="@+id/nap_title"/>
+    <com.inteliclinic.neuroon.views.ThinTextView android:textColor="@color/grey_8e" android:id="@+id/nap_best_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/nap_image" android:layout_below="@+id/nap_best_take"/>
+    <com.inteliclinic.neuroon.views.ThinTextView android:textSize="14sp" android:textColor="@color/text_normal_color" android:id="@+id/nap_time_whenever" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:text="@string/use_whenever_you_feel_tired" android:layout_toRightOf="@+id/nap_image" android:layout_below="@+id/nap_title"/>
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <com.inteliclinic.neuroon.views.ThinTextView android:textSize="24sp" android:textColor="@color/violet_544B85" android:id="@+id/nap_time" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <com.inteliclinic.neuroon.views.ThinTextView android:textSize="20sp" android:textColor="@color/violet_544B85" android:id="@+id/nap_time_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/min"/>
+    </LinearLayout>
+</merge>

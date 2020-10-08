@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.inteliclinic.neuroon.views.BoldTextView android:textColor="@color/jet_lag_color" android:id="@+id/layover_city" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_alignParentTop="true"/>
+        <com.inteliclinic.neuroon.views.LightTextView android:textColor="@color/jet_lag_color" android:id="@+id/layover_city_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:layout_toRightOf="@+id/layover_city" android:layout_alignBottom="@+id/layover_city"/>
+        <com.inteliclinic.neuroon.views.LightTextView android:id="@+id/layover_time_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_below="@+id/layover_city" android:layout_alignLeft="@+id/layover_city"/>
+        <com.inteliclinic.neuroon.views.BoldTextView android:id="@+id/layover_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:layout_toRightOf="@+id/layover_time_title" android:layout_alignBottom="@+id/layover_time_title"/>
+    </RelativeLayout>
+</merge>

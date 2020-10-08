@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/title_layout" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="54dp" android:layout_alignParentTop="true">
+        <LinearLayout android:orientation="horizontal" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="18sp" android:textStyle="normal" android:textColor="@color/intercomsdk_conversation_title_colour" android:gravity="center_vertical" android:id="@+id/appTitleText" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="16dp" android:text="@string/intercomsdk_title_activity_conversations" android:layout_weight="10"/>
+            <ImageButton android:id="@+id/compose_button" android:background="@drawable/intercomsdk_action_item_selector" android:padding="10dp" android:layout_width="@dimen/intercomsdk_action_item_width" android:layout_height="match_parent" android:src="@drawable/intercomsdk_composer_button_selector"/>
+            <ImageButton android:id="@+id/close_button" android:background="@drawable/intercomsdk_action_item_selector" android:padding="10dp" android:layout_width="@dimen/intercomsdk_action_item_width" android:layout_height="match_parent" android:src="@drawable/intercomsdk_close_button_selector"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/empty_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/intercomsdk_icn_conversations"/>
+        <TextView android:textSize="17sp" android:textColor="@color/intercomsdk_inbox_empty_colour" android:gravity="center" android:id="@+id/empty_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="50dp" android:layout_marginTop="16dp" android:layout_marginRight="50dp" android:text="@string/intercomsdk_empty_conversations"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/error_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/intercomsdk_icn_error"/>
+        <TextView android:textSize="17sp" android:textColor="@color/intercomsdk_inbox_empty_colour" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="@string/intercomsdk_unable_to_load"/>
+        <Button android:textColor="@drawable/intercomsdk_retry_button_selector" android:layout_gravity="center" android:id="@+id/retry_button" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="26dp" android:text="@string/intercomsdk_try_again"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/loading_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:id="@+id/progressBar" android:layout_width="40dp" android:layout_height="40dp" android:indeterminate="true" android:indeterminateDrawable="@drawable/intercomsdk_progress_wheel" style="?android:attr/progressBarStyleLarge"/>
+    </LinearLayout>
+    <ListView android:id="@+id/listView" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@android:color/transparent" android:layout_below="@+id/title_layout" android:layout_centerHorizontal="true"/>
+    <ImageView android:background="@drawable/intercomsdk_top_shadow" android:layout_width="match_parent" android:layout_height="4dp" android:layout_below="@+id/title_layout" android:contentDescription="@string/intercomsdk_accessibility_shadow"/>
+</RelativeLayout>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.inteliclinic.neuroon.views.ActivityEntryView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@drawable/activity_feed_background" android:paddingLeft="24dp" android:paddingTop="4dp" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp"/>

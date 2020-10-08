@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <View android:background="@color/intercomsdk_background_grey" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="14dp">
+        <ImageButton android:id="@+id/happy" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/intercomsdk_happy_normal" android:layout_weight="1"/>
+        <ImageButton android:id="@+id/neutral" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/intercomsdk_neutral_normal" android:layout_weight="1"/>
+        <ImageButton android:id="@+id/sad" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/intercomsdk_sad_normal" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="2dp" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <View android:background="@color/grey_8e" android:layout_width="match_parent" android:layout_height="1dp"/>
+    </FrameLayout>
+    <ImageView android:id="@+id/slider" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="26dp" android:layout_marginRight="18dp" android:src="@drawable/slider" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <com.inteliclinic.neuroon.views.ThinTextView android:textColor="@color/grey_8e" android:id="@+id/days_30" android:paddingLeft="8dp" android:paddingTop="5dp" android:layout_width="0dp" android:layout_height="30dp" android:text="@string/days_30" android:layout_weight="1"/>
+        <com.inteliclinic.neuroon.views.ThinTextView android:textColor="@android:color/black" android:gravity="right" android:id="@+id/days_7" android:paddingTop="5dp" android:paddingRight="8dp" android:layout_width="0dp" android:layout_height="30dp" android:text="@string/days_7" android:layout_weight="1"/>
+    </LinearLayout>
+</merge>

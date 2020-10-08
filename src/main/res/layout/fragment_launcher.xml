@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@drawable/bg_mask_launcher" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/logo" android:paddingTop="48dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/neuroon_logo_white" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+    <com.inteliclinic.neuroon.views.LightTextView android:textSize="22sp" android:gravity="center_horizontal" android:id="@+id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:text="@string/launcher_text" android:layout_below="@+id/logo" android:layout_centerHorizontal="true" android:lineSpacingExtra="4dp"/>
+    <com.pnikosis.materialishprogress.ProgressWheel android:id="@+id/progress_wheel" android:visibility="gone" android:layout_width="80dp" android:layout_height="80dp" android:layout_below="@+id/text" android:layout_centerHorizontal="true" app:matProg_progressIndeterminate="true" app:matProg_barColor="#5588ff"/>
+</RelativeLayout>

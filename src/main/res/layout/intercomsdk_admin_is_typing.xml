@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="20dp">
+    <ImageView android:id="@+id/dot1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/intercomsdk_is_typing_grey_dot" android:contentDescription="@string/intercomsdk_accessibility_is_typing" android:alpha="0.4" android:scaleX="0.7" android:scaleY="0.7"/>
+    <ImageView android:id="@+id/dot2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:src="@drawable/intercomsdk_is_typing_grey_dot" android:contentDescription="@string/intercomsdk_accessibility_is_typing" android:alpha="0.4" android:scaleX="0.7" android:scaleY="0.7"/>
+    <ImageView android:layout_gravity="center" android:id="@+id/dot3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:src="@drawable/intercomsdk_is_typing_grey_dot" android:contentDescription="@string/intercomsdk_accessibility_is_typing" android:alpha="0.4" android:scaleX="0.7" android:scaleY="0.7"/>
+</LinearLayout>

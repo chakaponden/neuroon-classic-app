@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:orientation="vertical" android:background="#fff" android:paddingTop="@dimen/navigation_drawer_space" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.inteliclinic.neuroon.views.BoldTextView android:textColor="@color/text_normal_color" android:id="@+id/more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="32dp" android:layout_marginTop="32dp" android:text="@string/more"/>
+        <View style="@style/DrawerMenuDivider"/>
+        <com.inteliclinic.neuroon.views.ThinTextView android:id="@+id/neuroon_mask" android:text="@string/menu_neuroon_mask" style="@style/DrawerMenuItem"/>
+        <View style="@style/DrawerMenuDivider"/>
+        <com.inteliclinic.neuroon.views.ThinTextView android:id="@+id/profile" android:text="@string/menu_profile" style="@style/DrawerMenuItem"/>
+        <View style="@style/DrawerMenuDivider"/>
+        <com.inteliclinic.neuroon.views.ThinTextView android:id="@+id/alarms" android:paddingRight="16dp" android:text="@string/alarms" android:drawableRight="@drawable/alarms_grey_menu" style="@style/DrawerMenuItem"/>
+        <View style="@style/DrawerMenuDivider"/>
+        <com.inteliclinic.neuroon.views.ThinTextView android:id="@+id/tips_collection" android:paddingRight="16dp" android:visibility="gone" android:text="@string/tips_collection" android:drawableRight="@drawable/ic_chat" style="@style/DrawerMenuItem"/>
+        <View android:visibility="gone" style="@style/DrawerMenuDivider"/>
+        <com.inteliclinic.neuroon.views.BoldTextView android:textColor="@color/text_normal_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="32dp" android:layout_marginTop="32dp" android:text="@string/support"/>
+        <View style="@style/DrawerMenuDivider"/>
+        <com.inteliclinic.neuroon.views.ThinTextView android:id="@+id/science_of_sleep" android:visibility="gone" android:text="@string/science_of_sleep" style="@style/DrawerMenuItem"/>
+        <com.inteliclinic.neuroon.views.ThinTextView android:id="@+id/helpdesk" android:text="@string/faq" style="@style/DrawerMenuItem"/>
+        <View android:id="@+id/talk_with_us_divider" style="@style/DrawerMenuDivider"/>
+        <com.inteliclinic.neuroon.views.ThinTextView android:id="@+id/talk_with_us" android:text="@string/chat_with_us" style="@style/DrawerMenuItem"/>
+        <View style="@style/DrawerMenuDivider"/>
+        <com.inteliclinic.neuroon.views.ThinTextView android:id="@+id/report_a_problem" android:paddingRight="16dp" android:visibility="gone" android:text="@string/report_a_problem" android:drawableRight="@drawable/ic_chat" style="@style/DrawerMenuItem"/>
+        <View android:visibility="gone" style="@style/DrawerMenuDivider"/>
+        <com.inteliclinic.neuroon.views.ThinTextView android:id="@+id/terms_and_conditions" android:text="@string/terms_and_conditions" style="@style/DrawerMenuItem"/>
+        <View style="@style/DrawerMenuDivider"/>
+        <com.inteliclinic.neuroon.views.ThinTextView android:id="@+id/about" android:text="@string/about" style="@style/DrawerMenuItem"/>
+        <View style="@style/DrawerMenuDivider"/>
+        <com.inteliclinic.neuroon.views.ThinTextView android:id="@+id/privacy_policy" android:visibility="gone" android:text="@string/privacy_policy" style="@style/DrawerMenuItem"/>
+        <View android:visibility="gone" style="@style/DrawerMenuDivider"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/therapy_back" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/neuroon_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="48dp" android:src="@drawable/neuron_logo_biale" android:layout_centerHorizontal="true"/>
+    <com.inteliclinic.neuroon.views.ThinTextView android:textSize="36sp" android:id="@+id/therapy_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_below="@+id/neuroon_logo" android:layout_centerHorizontal="true"/>
+    <com.inteliclinic.neuroon.views.TherapyProgressView android:id="@+id/progress_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginBottom="16dp" android:layout_above="@+id/slider" android:layout_below="@+id/therapy_title" android:layout_centerInParent="true"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@+id/progress_view" android:layout_alignTop="@+id/progress_view" android:layout_alignRight="@+id/progress_view" android:layout_alignBottom="@+id/progress_view">
+        <com.inteliclinic.neuroon.views.LightTextView android:textSize="46sp" android:id="@+id/timer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zero_time"/>
+        <com.inteliclinic.neuroon.views.LightTextView android:id="@+id/therapy_ends" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/smth_ends_at"/>
+        <com.inteliclinic.neuroon.views.LightTextView android:textSize="22sp" android:id="@+id/ends_time" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <com.inteliclinic.neuroon.views.SwipeToCloseView android:id="@+id/slider" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:layout_marginBottom="32dp" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

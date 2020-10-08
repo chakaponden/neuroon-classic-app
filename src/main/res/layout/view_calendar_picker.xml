@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="@dimen/abc_action_bar_default_height_material" android:minHeight="?attr/actionBarSize">
+        <com.inteliclinic.neuroon.views.ThinTextView android:textSize="22sp" android:textColor="@color/grey_8e" android:layout_gravity="center" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/close_button" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/close"/>
+    </android.support.v7.widget.Toolbar>
+    <android.support.v7.widget.RecyclerView android:id="@+id/recycler_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/toolbar"/>
+    <ImageView android:id="@+id/shadow" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/white_calendar" android:adjustViewBounds="true" android:layout_alignParentBottom="true"/>
+    <FrameLayout android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/accept" android:paddingBottom="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <ImageView android:layout_gravity="center" android:id="@+id/button_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/button_akcept_duzy"/>
+        <com.inteliclinic.neuroon.views.ThinTextView android:textSize="26sp" android:textColor="@android:color/white" android:layout_gravity="center" android:id="@+id/button_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/accept"/>
+    </FrameLayout>
+</RelativeLayout>

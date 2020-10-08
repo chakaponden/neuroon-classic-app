@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@drawable/bg_white" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar android:id="@+id/toolbar" android:background="?attr/colorPrimary" android:layout_width="match_parent" android:layout_height="@dimen/abc_action_bar_default_height_material" android:minHeight="?attr/actionBarSize">
+            <ImageView android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/back_button" android:paddingRight="@dimen/activity_horizontal_margin" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/arrow_left_grey"/>
+            <com.inteliclinic.neuroon.views.ThinTextView android:textSize="22sp" android:textColor="@color/grey_8e" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/general_info"/>
+        </android.support.v7.widget.Toolbar>
+        <com.inteliclinic.neuroon.views.ThinTextView android:textSize="32sp" android:textColor="@color/titleTextColor" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28dp" android:text="@string/date_of_birth" android:layout_below="@+id/toolbar" android:layout_centerHorizontal="true"/>
+        <ImageView android:id="@+id/calendar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginBottom="16dp" android:src="@drawable/calendar" android:layout_below="@+id/title" android:layout_centerHorizontal="true"/>
+        <FrameLayout android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="0dp" android:layout_alignLeft="@+id/date_picker_container" android:layout_alignTop="@+id/date_picker_container" android:layout_alignRight="@+id/date_picker_container" android:layout_alignBottom="@+id/date_picker_container">
+            <ImageView android:layout_gravity="center" android:id="@+id/indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/blue_selection" android:scaleType="center"/>
+        </FrameLayout>
+        <com.inteliclinic.neuroon.views.LightTextView android:textSize="28sp" android:textColor="@color/blue_3054FA" android:gravity="center" android:id="@+id/birth_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@+id/calendar" android:layout_alignTop="@+id/calendar" android:layout_alignRight="@+id/calendar" android:layout_alignBottom="@+id/calendar"/>
+        <LinearLayout android:id="@+id/date_picker_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="92dp" android:layout_alignLeft="@+id/calendar" android:layout_alignTop="@+id/calendar" android:layout_alignRight="@+id/calendar" android:layout_alignBottom="@+id/calendar">
+            <android.support.v7.widget.RecyclerView android:id="@+id/date_picker" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            <View android:background="@android:color/white" android:layout_width="1dp" android:layout_height="match_parent"/>
+            <android.support.v7.widget.RecyclerView android:id="@+id/month_picker" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2"/>
+            <View android:background="@android:color/white" android:layout_width="1dp" android:layout_height="match_parent"/>
+            <android.support.v7.widget.RecyclerView android:id="@+id/year_picker" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2"/>
+        </LinearLayout>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="-1dp" android:layout_marginBottom="-1dp" android:layout_alignLeft="@+id/date_picker_container" android:layout_alignTop="@+id/date_picker_container" android:layout_alignRight="@+id/date_picker_container" android:layout_alignBottom="@+id/date_picker_container">
+            <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/shadow_top" android:scaleType="fitXY" android:adjustViewBounds="true"/>
+            <ImageView android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/shadow_bottom" android:scaleType="fitXY" android:adjustViewBounds="true"/>
+        </FrameLayout>
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@+id/step_indicator" android:layout_below="@+id/calendar" android:layout_centerHorizontal="true">
+            <com.inteliclinic.neuroon.views.ThinButton android:textSize="26sp" android:textColor="@android:color/white" android:layout_gravity="bottom" android:id="@+id/next" android:background="@drawable/button_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/next"/>
+        </FrameLayout>
+        <LinearLayout android:id="@+id/step_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:layout_marginRight="20dp" android:layout_marginBottom="10dp" android:src="@drawable/odliczanie_puste"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:layout_marginRight="20dp" android:layout_marginBottom="10dp" android:src="@drawable/odliczanie_zaznaczone"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:layout_marginRight="20dp" android:layout_marginBottom="10dp" android:src="@drawable/odliczanie_puste"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:layout_marginRight="20dp" android:layout_marginBottom="10dp" android:src="@drawable/odliczanie_puste"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:layout_marginRight="20dp" android:layout_marginBottom="10dp" android:src="@drawable/odliczanie_puste"/>
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

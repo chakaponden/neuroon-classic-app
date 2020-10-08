@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@drawable/bg_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar android:id="@+id/toolbar" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="@dimen/abc_action_bar_default_height_material" android:minHeight="?attr/actionBarSize">
+        <ImageView android:layout_gravity="left" android:id="@+id/back_button" android:paddingLeft="8dp" android:paddingTop="18dp" android:paddingRight="16dp" android:paddingBottom="18dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_left_grey" android:scaleType="centerInside"/>
+        <com.inteliclinic.neuroon.views.ThinTextView android:textSize="22sp" android:textColor="@color/grey_8e" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/title_jet_lag_blocker"/>
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout android:orientation="vertical" android:paddingBottom="32dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/toolbar">
+        <com.inteliclinic.neuroon.views.LightTextView android:textSize="30sp" android:textColor="@color/jet_lag_color" android:gravity="center_horizontal" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="34dp" android:layout_marginTop="16dp" android:layout_marginRight="34dp" android:layout_marginBottom="32dp" android:text="@string/header_booking_reference_number"/>
+        <com.inteliclinic.neuroon.views.ThinTextView android:textSize="16sp" android:textColor="@color/text_normal_color" android:gravity="center" android:layout_gravity="center" android:id="@+id/booking_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginRight="@dimen/activity_horizontal_margin" android:text="@string/booking_reference_number_description" android:lineSpacingExtra="2dp"/>
+        <FrameLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_marginTop="16dp" android:layout_marginBottom="16dp" android:layout_weight="1">
+            <com.inteliclinic.neuroon.views.ThinButton android:textSize="28sp" android:layout_gravity="bottom" android:id="@+id/close" android:background="@drawable/button_black_orange" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/close"/>
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

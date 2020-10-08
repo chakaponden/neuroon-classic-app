@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="intercomsdk_others">
+        <item quantity="other"> &amp; %d others</item>
+        <item quantity="one"> &amp; 1 other</item>
+    </plurals>
+    <plurals name="some_days">
+        <item quantity="other">%d days</item>
+        <item quantity="one">%d day</item>
+    </plurals>
+    <plurals name="some_days_after_the_flight">
+        <item quantity="other">%d days after the flight</item>
+        <item quantity="zero">%d day after the flight</item>
+        <item quantity="one">%d day after the flight</item>
+    </plurals>
+    <plurals name="some_days_before_the_flight">
+        <item quantity="other">%d days before the flight</item>
+        <item quantity="zero">%d day before the flight</item>
+        <item quantity="one">%d day before the flight</item>
+    </plurals>
+    <plurals name="some_days_left">
+        <item quantity="other">%d days left</item>
+        <item quantity="one">%d day left</item>
+    </plurals>
+</resources>

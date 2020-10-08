@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.inteliclinic.neuroon.views.LightTextView android:textSize="24dp" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="86dp" android:text="@string/are_you_sure_you_want_to_leave" android:layout_centerHorizontal="true"/>
+    <com.inteliclinic.neuroon.views.LightTextView android:gravity="center" android:id="@+id/warning_text_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/are_you_sure_answering_questions" android:layout_centerInParent="true"/>
+    <com.inteliclinic.neuroon.views.LightTextView android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="@string/are_you_sure_anyway_you_can_always" android:layout_below="@+id/warning_text_1" android:layout_centerHorizontal="true"/>
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginBottom="32dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <FrameLayout android:id="@+id/leave" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignRight="@+id/buttons_center" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/button_leave"/>
+            <com.inteliclinic.neuroon.views.ThinTextView android:textSize="26sp" android:textColor="@android:color/black" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="32dp" android:text="@string/leave"/>
+        </FrameLayout>
+        <View android:id="@+id/buttons_center" android:layout_width="1px" android:layout_height="1px" android:layout_centerInParent="true"/>
+        <FrameLayout android:id="@+id/continue_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-16dp" android:layout_alignLeft="@+id/buttons_center" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/button_continue"/>
+            <com.inteliclinic.neuroon.views.ThinTextView android:textSize="26sp" android:textColor="@android:color/black" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/continue_text"/>
+        </FrameLayout>
+    </RelativeLayout>
+</RelativeLayout>

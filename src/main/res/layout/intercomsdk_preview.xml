@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/previewRoot" android:padding="40dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/avatar_container" android:layout_width="62dp" android:layout_height="62dp">
+        <View android:layout_gravity="top|center_vertical|center_horizontal|center" android:id="@+id/avatar_shadow" android:background="@drawable/intercomsdk_avatar_shadow" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <ImageView android:layout_gravity="top|center_vertical|center_horizontal|center" android:id="@+id/avatar" android:visibility="visible" android:layout_width="56dp" android:layout_height="56dp" android:contentDescription="@string/intercomsdk_accessibility_avatar"/>
+        <TextView android:textSize="12sp" android:textColor="@android:color/white" android:ellipsize="end" android:gravity="center" android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:id="@+id/indicator_text" android:background="@drawable/intercomsdk_circle" android:layout_width="16dp" android:layout_height="16dp" android:maxLines="1" android:singleLine="true" android:alpha="0"/>
+    </FrameLayout>
+    <TextView android:textSize="16sp" android:textColor="@android:color/white" android:ellipsize="end" android:gravity="center" android:id="@+id/notification_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginBottom="8dp" android:maxWidth="200dp" android:maxLines="1" android:layout_alignTop="@+id/avatar_container" android:layout_alignBottom="@+id/avatar_container" android:alpha="0"/>
+</RelativeLayout>

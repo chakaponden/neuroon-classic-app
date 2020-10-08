@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@drawable/bg_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/neuroon_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="48dp" android:src="@drawable/neuroon_logo" android:layout_centerHorizontal="true"/>
+    <com.inteliclinic.neuroon.views.ThinTextView android:textSize="36sp" android:textColor="@android:color/black" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginBottom="32dp" android:text="@string/searching" android:layout_below="@+id/neuroon_logo" android:layout_centerHorizontal="true"/>
+    <ImageView android:id="@+id/blue_circle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-28dp" android:src="@drawable/search_blue_circle" android:layout_below="@+id/title"/>
+    <ImageView android:id="@+id/phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="56dp" android:layout_marginTop="40dp" android:src="@drawable/phone" android:layout_alignLeft="@+id/blue_circle" android:layout_alignTop="@+id/blue_circle"/>
+    <FrameLayout android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/cancel" android:paddingBottom="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/button_akcept_duzy"/>
+        <com.inteliclinic.neuroon.views.ThinTextView android:textSize="26sp" android:textColor="@android:color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel"/>
+    </FrameLayout>
+</RelativeLayout>

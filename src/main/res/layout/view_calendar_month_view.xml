@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="wrap_content" android:layout_height="match_parent">
+    <com.inteliclinic.neuroon.views.BoldTextView android:textColor="@color/blue_3054FA" android:id="@+id/month_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginTop="8dp" android:layout_marginBottom="4dp" android:layout_alignParentTop="true"/>
+    <LinearLayout android:id="@+id/days_header" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/month_name">
+        <com.inteliclinic.neuroon.views.ThinTextView android:textColor="@color/grey_8e" android:gravity="center_horizontal" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/mon" android:layout_weight="1"/>
+        <com.inteliclinic.neuroon.views.ThinTextView android:textColor="@color/grey_8e" android:gravity="center_horizontal" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/tue" android:layout_weight="1"/>
+        <com.inteliclinic.neuroon.views.ThinTextView android:textColor="@color/grey_8e" android:gravity="center_horizontal" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/wed" android:layout_weight="1"/>
+        <com.inteliclinic.neuroon.views.ThinTextView android:textColor="@color/grey_8e" android:gravity="center_horizontal" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/thu" android:layout_weight="1"/>
+        <com.inteliclinic.neuroon.views.ThinTextView android:textColor="@color/grey_8e" android:gravity="center_horizontal" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/fri" android:layout_weight="1"/>
+        <com.inteliclinic.neuroon.views.ThinTextView android:textColor="@color/grey_8e" android:gravity="center_horizontal" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/sat" android:layout_weight="1"/>
+        <com.inteliclinic.neuroon.views.ThinTextView android:textColor="@color/grey_8e" android:gravity="center_horizontal" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/sun" android:layout_weight="1"/>
+    </LinearLayout>
+    <com.inteliclinic.neuroon.views.calendar.MonthView android:id="@+id/month" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_below="@+id/days_header" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+</merge>

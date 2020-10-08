@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@drawable/bg_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar android:id="@+id/toolbar" android:background="?attr/colorPrimary" android:layout_width="match_parent" android:layout_height="@dimen/abc_action_bar_default_height_material" android:minHeight="?attr/actionBarSize">
+        <ImageView android:layout_gravity="left" android:id="@+id/menu" android:paddingTop="18dp" android:paddingBottom="18dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/menu_ico" android:scaleType="centerInside"/>
+        <com.inteliclinic.neuroon.views.ThinTextView android:textSize="22sp" android:textColor="@color/text_normal_color" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/title_jet_lag_blocker"/>
+    </android.support.v7.widget.Toolbar>
+    <ScrollView android:layout_width="wrap_content" android:layout_height="wrap_content" android:fillViewport="true" android:layout_above="@+id/bottom_toolbar" android:layout_below="@+id/toolbar" android:layout_alignParentLeft="true" android:layout_alignParentRight="true">
+        <RelativeLayout android:gravity="bottom" android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="0dp">
+            <FrameLayout android:layout_gravity="center" android:id="@+id/jet_lag_box" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.inteliclinic.neuroon.views.charts.JetLagChartView android:layout_gravity="center" android:id="@+id/jet_lag_chart" android:background="@drawable/jetlag_main_circle" android:layout_width="300dp" android:layout_height="300dp"/>
+                <ImageView android:layout_gravity="left|center_vertical|center_horizontal|center" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18dp" android:src="@drawable/arrow_big_left"/>
+                <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="18dp" android:src="@drawable/arrow_big_right"/>
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.inteliclinic.neuroon.views.ThinTextView android:textSize="28dp" android:textColor="@color/orange_FF6D00" android:id="@+id/jet_lag_percent" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hello_traveler"/>
+                    <com.inteliclinic.neuroon.views.ThinTextView android:textSize="14sp" android:textColor="#fff" android:gravity="center" android:id="@+id/jet_lag_left" android:layout_width="200dp" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/you_have_not_scheduled_any_therapy_yet"/>
+                </LinearLayout>
+            </FrameLayout>
+            <RelativeLayout android:id="@+id/help_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginRight="@dimen/activity_horizontal_margin" android:layout_marginBottom="@dimen/activity_vertical_margin" android:layout_below="@+id/jet_lag_box">
+                <ImageView android:id="@+id/help_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_question_mark_help_orange" android:layout_alignParentRight="true"/>
+                <com.inteliclinic.neuroon.views.LightTextView android:textColor="@color/jet_lag_color" android:gravity="right" android:id="@+id/current_therapy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginTop="4dp" android:layout_marginRight="@dimen/activity_horizontal_margin" android:text="@string/learn_how_to_use_njet_lag_blocker" android:layout_toLeftOf="@+id/help_icon" android:layout_centerVertical="true" android:lineSpacingExtra="4dp"/>
+            </RelativeLayout>
+            <com.inteliclinic.neuroon.views.ThinButton android:id="@+id/start_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="24dp" android:text="@string/start_therapy" android:layout_below="@+id/help_box" android:layout_centerHorizontal="true" style="@style/ButtonBlackOrange"/>
+        </RelativeLayout>
+    </ScrollView>
+    <com.inteliclinic.neuroon.views.BottomToolbar android:id="@+id/bottom_toolbar" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

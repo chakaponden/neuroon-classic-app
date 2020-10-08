@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ProgressBar android:layout_gravity="center_horizontal" android:id="@+id/progressBar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:indeterminate="true" android:indeterminateDrawable="@drawable/intercomsdk_progress_wheel" style="?android:attr/progressBarStyleLarge"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/cell_content" android:paddingTop="20dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:layout_centerVertical="true">
+        <LinearLayout android:layout_gravity="left" android:orientation="vertical" android:id="@+id/cellLayout" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <TextView android:textSize="13sp" android:textColor="@color/intercomsdk_light_grey_colour" android:ellipsize="end" android:id="@+id/rowTime" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:layout_marginTop="@dimen/intercomsdk_rowtime_padding_top" android:maxLines="1" android:maxLength="50"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/buttonLayout" android:background="@drawable/intercomsdk_avatar_border" android:padding="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/avatarView" android:layout_width="40dp" android:layout_height="40dp" android:contentDescription="@string/intercomsdk_accessibility_avatar"/>
+    </LinearLayout>
+</RelativeLayout>

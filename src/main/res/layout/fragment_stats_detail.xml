@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@drawable/bg_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar android:id="@+id/toolbar" android:background="?attr/colorPrimary" android:layout_width="match_parent" android:layout_height="@dimen/abc_action_bar_default_height_material" android:minHeight="?attr/actionBarSize">
+        <ImageView android:layout_gravity="left" android:id="@+id/back_button" android:paddingTop="16dp" android:paddingRight="16dp" android:paddingBottom="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_left_grey" android:scaleType="centerInside"/>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_gravity="bottom" android:id="@+id/indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/trojkacik"/>
+            <LinearLayout android:id="@+id/icons_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:id="@+id/time_stats" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/button_time_reverse" android:layout_weight="1"/>
+                <ImageView android:id="@+id/heart_stats" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/button_heart_reverse" android:layout_weight="1"/>
+                <ImageView android:id="@+id/brain_stats" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/button_brain_reverse" android:layout_weight="1"/>
+            </LinearLayout>
+        </FrameLayout>
+    </android.support.v7.widget.Toolbar>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="45dp" android:layout_marginTop="@dimen/activity_vertical_margin" android:layout_marginRight="@dimen/activity_horizontal_margin">
+        <com.inteliclinic.neuroon.views.calendar.SleepDatesHorizontalListView android:id="@+id/calendar_list" android:layout_width="wrap_content" android:layout_height="@dimen/dashboard_calendar_list_item_height" android:layout_toLeftOf="@+id/calendar_view_ico" android:layout_alignParentTop="true" android:layout_alignParentBottom="true"/>
+        <ImageView android:id="@+id/calendar_list_line" android:paddingBottom="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/line_dates" android:layout_toLeftOf="@+id/calendar_view_ico" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true"/>
+        <ImageView android:id="@+id/slider" android:layout_width="@dimen/dashboard_calendar_list_item_width" android:layout_height="wrap_content" android:src="@drawable/slider" android:layout_toLeftOf="@+id/calendar_view_ico" android:layout_alignParentBottom="true"/>
+        <ImageView android:id="@+id/calendar_view_ico" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/calendar_ico" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <android.support.v4.view.ViewPager android:id="@+id/view_pager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.inteliclinic.neuroon.views.ThinTextView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:textColor="#000" android:gravity="center" android:layout_width="@dimen/dashboard_calendar_list_item_width" android:layout_height="@dimen/dashboard_calendar_list_item_height"/>

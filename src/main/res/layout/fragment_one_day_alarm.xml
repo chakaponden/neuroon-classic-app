@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@drawable/bg_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar android:id="@+id/toolbar" android:background="?attr/colorPrimary" android:layout_width="match_parent" android:layout_height="@dimen/abc_action_bar_default_height_material" android:minHeight="?attr/actionBarSize">
+        <ImageView android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/back_button" android:paddingRight="@dimen/activity_horizontal_margin" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/arrow_left_grey"/>
+        <com.inteliclinic.neuroon.views.ThinTextView android:textSize="22sp" android:textColor="@color/grey_8e" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/one_day_alarm"/>
+    </android.support.v7.widget.Toolbar>
+    <ScrollView android:background="@drawable/bg_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+            <com.inteliclinic.neuroon.views.ThinTextView android:textSize="32sp" android:textColor="@color/one_day_alarm" android:layout_gravity="center" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28dp" android:layout_marginBottom="32dp" android:text="@string/one_day_alarm"/>
+            <ImageView android:layout_gravity="center" android:id="@+id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:src="@drawable/alarm_duzy"/>
+            <com.inteliclinic.neuroon.views.ThinTextView android:textColor="@color/text_normal_color" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="16dp" android:layout_marginRight="20dp" android:layout_marginBottom="16dp" android:text="@string/one_day_alarm_body"/>
+            <com.inteliclinic.neuroon.views.TimeDisplayBarView android:id="@+id/one" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_marginBottom="4dp" app:timeTextColor="@color/one_day_alarm"/>
+            <com.inteliclinic.neuroon.views.SwitchView android:layout_gravity="right" android:id="@+id/on_switch" android:layout_width="100dp" android:layout_height="40dp" android:layout_marginTop="16dp" android:layout_marginRight="16dp" android:layout_centerVertical="true" app:indicator="@color/one_day_alarm" app:on_textColor="@color/one_day_alarm" app:on_text="ON" app:off_text="OFF"/>
+            <com.inteliclinic.neuroon.views.ThinTextView android:textColor="@color/text_normal_color" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="24dp" android:layout_marginRight="20dp" android:text="@string/one_day_alarm_body_about_biorhythm"/>
+            <LinearLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginBottom="16dp">
+                <com.inteliclinic.neuroon.views.ThinTextView android:textColor="@color/green_0CA993" android:gravity="right" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/biorhythm"/>
+                <ImageView android:layout_gravity="center" android:layout_width="80dp" android:layout_height="40dp" android:src="@drawable/biorythm_maly"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

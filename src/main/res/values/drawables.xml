@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="normal_menu_color">#00ffffff</drawable>
+    <drawable name="notification_template_icon_bg">#3333b5e5</drawable>
+    <drawable name="pressed_jetlag_color">@color/jet_lag_color</drawable>
+    <drawable name="pressed_menu_color">#000</drawable>
+</resources>
