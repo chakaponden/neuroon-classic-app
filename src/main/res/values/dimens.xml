@@ -7,12 +7,12 @@
     <dimen name="abc_text_size_subtitle_material_toolbar">16dp</dimen>
     <dimen name="abc_text_size_title_material_toolbar">20dp</dimen>
     <dimen name="abc_config_prefDialogWidth">320dp</dimen>
-    <dimen name="abc_dialog_fixed_height_major">80%</dimen>
-    <dimen name="abc_dialog_fixed_height_minor">100%</dimen>
+    <item name="abc_dialog_fixed_height_major" format="float" type="dimen">0.8</item>
+    <item name="abc_dialog_fixed_height_minor" format="float" type="dimen">1.0</item>
     <dimen name="abc_dialog_fixed_width_major">320dp</dimen>
     <dimen name="abc_dialog_fixed_width_minor">320dp</dimen>
-    <dimen name="abc_dialog_min_width_major">65%</dimen>
-    <dimen name="abc_dialog_min_width_minor">95%</dimen>
+    <item name="abc_dialog_min_width_major" format="float" type="dimen">0.65</item>
+    <item name="abc_dialog_min_width_minor" format="float" type="dimen">0.95</item>
     <dimen name="abc_search_view_text_min_width">160dp</dimen>
     <dimen name="abc_action_bar_content_inset_material">16dp</dimen>
     <dimen name="abc_action_bar_default_padding_end_material">0dp</dimen>
