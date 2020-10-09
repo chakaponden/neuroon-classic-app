@@ -40,25 +40,25 @@
     </style>
     <style name="Base.Theme.AppCompat.Light.Dialog">
     </style>
-    <style name="Base.V11.Theme.AppCompat.Dialog">
+    <style name="Base.V11.Theme.AppCompat.Dialog" parent="Base.V7.Theme.AppCompat.Dialog">
         <item name="android:borderlessButtonStyle">@style/Widget.AppCompat.Button.Borderless</item>
         <item name="android:buttonBarStyle">@style/Widget.AppCompat.ButtonBar.AlertDialog</item>
         <item name="android:windowCloseOnTouchOutside">@bool/abc_config_closeDialogWhenTouchOutside</item>
     </style>
-    <style name="Base.V11.Theme.AppCompat.Light.Dialog">
+    <style name="Base.V11.Theme.AppCompat.Light.Dialog" parent="Base.V7.Theme.AppCompat.Light.Dialog">
         <item name="android:borderlessButtonStyle">@style/Widget.AppCompat.Button.Borderless</item>
         <item name="android:buttonBarStyle">@style/Widget.AppCompat.ButtonBar.AlertDialog</item>
         <item name="android:windowCloseOnTouchOutside">@bool/abc_config_closeDialogWhenTouchOutside</item>
     </style>
-    <style name="Base.Widget.AppCompat.ProgressBar">
+    <style name="Base.Widget.AppCompat.ProgressBar" parent="android:Widget.Holo.ProgressBar">
     </style>
-    <style name="Base.Widget.AppCompat.ProgressBar.Horizontal">
+    <style name="Base.Widget.AppCompat.ProgressBar.Horizontal" parent="android:Widget.Holo.ProgressBar.Horizontal">
     </style>
-    <style name="Platform.AppCompat">
+    <style name="Platform.AppCompat" parent="android:Theme.Holo">
     </style>
-    <style name="Platform.AppCompat.Light">
+    <style name="Platform.AppCompat.Light" parent="android:Theme.Holo.Light">
     </style>
-    <style name="Platform.V11.AppCompat">
+    <style name="Platform.V11.AppCompat" parent="android:Theme.Holo">
         <item name="android:colorForeground">@color/foreground_material_dark</item>
         <item name="android:colorBackground">@color/background_material_dark</item>
         <item name="android:backgroundDimAmount">0.6</item>
@@ -141,6 +141,6 @@
         <item name="android:textColorLinkInverse">?attr/colorAccent</item>
         <item name="selectableItemBackground">?android:attr/selectableItemBackground</item>
     </style>
-    <style name="Platform.Widget.AppCompat.Spinner">
+    <style name="Platform.Widget.AppCompat.Spinner" parent="android:Widget.Holo.Spinner">
     </style>
 </resources>

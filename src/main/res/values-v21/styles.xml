@@ -12,31 +12,35 @@
     </style>
     <style name="Base.Theme.AppCompat.Light.Dialog">
     </style>
-    <style name="Base.Widget.AppCompat.ProgressBar">
+    <style name="Base.Widget.AppCompat.ProgressBar"
+        parent="android:Widget.Material.ProgressBar">
     </style>
-    <style name="Base.Widget.AppCompat.ProgressBar.Horizontal">
+    <style name="Base.Widget.AppCompat.ProgressBar.Horizontal"
+        parent="android:Widget.Material.ProgressBar.Horizontal">
     </style>
-    <style name="Platform.AppCompat">
+    <style name="Platform.AppCompat" parent="android:Theme.Material">
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowActionBar">false</item>
         <item name="android:buttonBarStyle">?attr/buttonBarStyle</item>
         <item name="android:buttonBarButtonStyle">?attr/buttonBarButtonStyle</item>
     </style>
-    <style name="Platform.AppCompat.Light">
+    <style name="Platform.AppCompat.Light" parent="android:Theme.Material.Light">
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowActionBar">false</item>
         <item name="android:buttonBarStyle">?attr/buttonBarStyle</item>
         <item name="android:buttonBarButtonStyle">?attr/buttonBarButtonStyle</item>
     </style>
-    <style name="Base.Widget.AppCompat.AutoCompleteTextView">
+    <style name="Base.Widget.AppCompat.AutoCompleteTextView"
+        parent="android:Widget.Material.AutoCompleteTextView">
         <item name="android:background">?attr/editTextBackground</item>
     </style>
-    <style name="Base.Widget.AppCompat.EditText">
+    <style name="Base.Widget.AppCompat.EditText"
+        parent="android:Widget.Material.EditText">
         <item name="android:background">?attr/editTextBackground</item>
     </style>
     <style name="Base.TextAppearance.AppCompat.Button">
     </style>
-    <style name="Base.TextAppearance.AppCompat">
+    <style name="Base.TextAppearance.AppCompat" parent="android:TextAppearance.Material">
     </style>
     <style name="Base.TextAppearance.AppCompat.Body1">
     </style>
@@ -56,9 +60,11 @@
     </style>
     <style name="Base.TextAppearance.AppCompat.Large">
     </style>
-    <style name="Base.TextAppearance.AppCompat.Light.Widget.PopupMenu.Large">
+    <style name="Base.TextAppearance.AppCompat.Light.Widget.PopupMenu.Large"
+        parent="android:TextAppearance.Material.Widget.PopupMenu.Large">
     </style>
-    <style name="Base.TextAppearance.AppCompat.Light.Widget.PopupMenu.Small">
+    <style name="Base.TextAppearance.AppCompat.Light.Widget.PopupMenu.Small"
+        parent="android:TextAppearance.Material.Widget.PopupMenu.Small">
     </style>
     <style name="Base.TextAppearance.AppCompat.Medium">
     </style>
@@ -74,39 +80,51 @@
     </style>
     <style name="Base.TextAppearance.AppCompat.Title">
     </style>
-    <style name="Base.TextAppearance.AppCompat.Widget.ActionBar.Menu">
+    <style name="Base.TextAppearance.AppCompat.Widget.ActionBar.Menu"
+        parent="android:TextAppearance.Material.Widget.ActionBar.Menu">
     </style>
-    <style name="Base.TextAppearance.AppCompat.Widget.ActionBar.Subtitle">
+    <style name="Base.TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+        parent="android:TextAppearance.Material.Widget.ActionBar.Subtitle">
     </style>
     <style name="Base.TextAppearance.AppCompat.Widget.ActionBar.Subtitle.Inverse">
     </style>
-    <style name="Base.TextAppearance.AppCompat.Widget.ActionBar.Title">
+    <style name="Base.TextAppearance.AppCompat.Widget.ActionBar.Title"
+        parent="android:TextAppearance.Material.Widget.ActionBar.Title">
     </style>
     <style name="Base.TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse">
     </style>
-    <style name="Base.TextAppearance.AppCompat.Widget.ActionMode.Subtitle">
+    <style name="Base.TextAppearance.AppCompat.Widget.ActionMode.Subtitle"
+        parent="android:TextAppearance.Material.Widget.ActionMode.Subtitle">
     </style>
-    <style name="Base.TextAppearance.AppCompat.Widget.ActionMode.Title">
+    <style name="Base.TextAppearance.AppCompat.Widget.ActionMode.Title"
+        parent="android:TextAppearance.Material.Widget.ActionMode.Title">
     </style>
-    <style name="Base.TextAppearance.AppCompat.Widget.Button">
+    <style name="Base.TextAppearance.AppCompat.Widget.Button"
+        parent="android:TextAppearance.Material.Widget.Button">
     </style>
-    <style name="Base.TextAppearance.AppCompat.Widget.PopupMenu.Large">
+    <style name="Base.TextAppearance.AppCompat.Widget.PopupMenu.Large"
+        parent="android:TextAppearance.Material.Widget.PopupMenu.Large">
     </style>
-    <style name="Base.TextAppearance.AppCompat.Widget.PopupMenu.Small">
+    <style name="Base.TextAppearance.AppCompat.Widget.PopupMenu.Small"
+        parent="android:TextAppearance.Material.Widget.PopupMenu.Small">
     </style>
-    <style name="Base.TextAppearance.AppCompat.Widget.Switch">
+    <style name="Base.TextAppearance.AppCompat.Widget.Switch"
+        parent="android:TextAppearance.Material.Button">
     </style>
-    <style name="Base.TextAppearance.AppCompat.Widget.TextView.SpinnerItem">
+    <style name="Base.TextAppearance.AppCompat.Widget.TextView.SpinnerItem"
+        parent="android:TextAppearance.Material.Widget.TextView.SpinnerItem">
     </style>
-    <style name="Base.TextAppearance.Widget.AppCompat.Toolbar.Subtitle">
+    <style name="Base.TextAppearance.Widget.AppCompat.Toolbar.Subtitle"
+        parent="android:TextAppearance.Material.Widget.ActionBar.Subtitle">
     </style>
-    <style name="Base.TextAppearance.Widget.AppCompat.Toolbar.Title">
+    <style name="Base.TextAppearance.Widget.AppCompat.Toolbar.Title"
+        parent="android:TextAppearance.Material.Widget.ActionBar.Title">
     </style>
-    <style name="Base.Theme.AppCompat">
+    <style name="Base.Theme.AppCompat" parent="Base.V21.Theme.AppCompat">
     </style>
-    <style name="Base.Theme.AppCompat.Light">
+    <style name="Base.Theme.AppCompat.Light" parent="Base.V21.Theme.AppCompat.Light">
     </style>
-    <style name="Base.V21.Theme.AppCompat">
+    <style name="Base.V21.Theme.AppCompat" parent="Base.V7.Theme.AppCompat">
         <item name="android:colorControlNormal">?attr/colorControlNormal</item>
         <item name="android:colorControlActivated">?attr/colorControlActivated</item>
         <item name="android:colorButtonNormal">?attr/colorButtonNormal</item>
@@ -186,14 +204,14 @@
     </style>
     <style name="Base.Widget.AppCompat.ActionBar.TabView">
     </style>
-    <style name="Base.Widget.AppCompat.ActionButton">
+    <style name="Base.Widget.AppCompat.ActionButton" parent="android:Widget.Material.ActionButton">
     </style>
     <style name="Base.Widget.AppCompat.ActionButton.CloseMode">
         <item name="android:minWidth">56dp</item>
     </style>
     <style name="Base.Widget.AppCompat.ActionButton.Overflow">
     </style>
-    <style name="Base.Widget.AppCompat.Button">
+    <style name="Base.Widget.AppCompat.Button" parent="android:Widget.Material.Button">
     </style>
     <style name="Base.Widget.AppCompat.Button.Borderless">
     </style>
@@ -201,15 +219,17 @@
     </style>
     <style name="Base.Widget.AppCompat.Button.Small">
     </style>
-    <style name="Base.Widget.AppCompat.ButtonBar">
+    <style name="Base.Widget.AppCompat.ButtonBar" parent="android:Widget.Material.ButtonBar">
     </style>
-    <style name="Base.Widget.AppCompat.CompoundButton.CheckBox">
+    <style name="Base.Widget.AppCompat.CompoundButton.CheckBox" parent="android:Widget.Material.CompoundButton.CheckBox">
     </style>
-    <style name="Base.Widget.AppCompat.CompoundButton.RadioButton">
+    <style name="Base.Widget.AppCompat.CompoundButton.RadioButton"
+        parent="android:Widget.Material.CompoundButton.RadioButton">
     </style>
-    <style name="Base.Widget.AppCompat.DropDownItem.Spinner">
+    <style name="Base.Widget.AppCompat.DropDownItem.Spinner"
+        parent="android:Widget.Material.DropDownItem.Spinner">
     </style>
-    <style name="Base.Widget.AppCompat.ImageButton">
+    <style name="Base.Widget.AppCompat.ImageButton" parent="android:Widget.Material.ImageButton">
     </style>
     <style name="Base.Widget.AppCompat.Light.ActionBar.TabText">
     </style>
@@ -217,37 +237,35 @@
     </style>
     <style name="Base.Widget.AppCompat.Light.ActionBar.TabView">
     </style>
-    <style name="Base.Widget.AppCompat.Light.PopupMenu">
+    <style name="Base.Widget.AppCompat.Light.PopupMenu" parent="android:Widget.Material.Light.PopupMenu">
     </style>
     <style name="Base.Widget.AppCompat.Light.PopupMenu.Overflow">
         <item name="android:dropDownHorizontalOffset">-4dp</item>
         <item name="android:overlapAnchor">true</item>
     </style>
-    <style name="Base.Widget.AppCompat.ListPopupWindow">
+    <style name="Base.Widget.AppCompat.ListPopupWindow" parent="android:Widget.Material.ListPopupWindow">
     </style>
-    <style name="Base.Widget.AppCompat.ListView">
+    <style name="Base.Widget.AppCompat.ListView" parent="android:Widget.Material.ListView">
     </style>
     <style name="Base.Widget.AppCompat.ListView.DropDown">
     </style>
     <style name="Base.Widget.AppCompat.ListView.Menu">
     </style>
-    <style name="Base.Widget.AppCompat.PopupMenu">
+    <style name="Base.Widget.AppCompat.PopupMenu" parent="android:Widget.Material.PopupMenu">
     </style>
     <style name="Base.Widget.AppCompat.PopupMenu.Overflow">
         <item name="android:dropDownHorizontalOffset">-4dp</item>
         <item name="android:overlapAnchor">true</item>
     </style>
-    <style name="Base.Widget.AppCompat.RatingBar">
+    <style name="Base.Widget.AppCompat.RatingBar" parent="android:Widget.Material.RatingBar">
     </style>
-    <style name="Base.Widget.AppCompat.SeekBar">
+    <style name="Base.Widget.AppCompat.SeekBar" parent="android:Widget.Material.SeekBar"/>
+    <style name="Base.Widget.AppCompat.Spinner" parent="android:Widget.Material.Spinner"/>
+    <style name="Base.Widget.AppCompat.TextView.SpinnerItem" parent="android:Widget.Material.TextView.SpinnerItem"/>
+    <style name="Base.Widget.AppCompat.Toolbar.Button.Navigation"
+        parent="android:Widget.Material.Toolbar.Button.Navigation">
     </style>
-    <style name="Base.Widget.AppCompat.Spinner">
-    </style>
-    <style name="Base.Widget.AppCompat.TextView.SpinnerItem">
-    </style>
-    <style name="Base.Widget.AppCompat.Toolbar.Button.Navigation">
-    </style>
-    <style name="Platform.ThemeOverlay.AppCompat">
+    <style name="Platform.ThemeOverlay.AppCompat" parent="">
         <item name="android:colorControlNormal">?attr/colorControlNormal</item>
         <item name="android:colorControlActivated">?attr/colorControlActivated</item>
         <item name="android:colorButtonNormal">?attr/colorButtonNormal</item>
