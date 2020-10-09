@@ -47,8 +47,8 @@
     <dimen name="abc_dialog_list_padding_vertical_material">8dp</dimen>
     <dimen name="abc_dialog_padding_material">24dp</dimen>
     <dimen name="abc_dialog_padding_top_material">18dp</dimen>
-    <dimen name="abc_disabled_alpha_material_dark">0.3</dimen>
-    <dimen name="abc_disabled_alpha_material_light">0.26</dimen>
+    <item name="abc_disabled_alpha_material_dark" format="float" type="dimen">0.30</item>
+    <item name="abc_disabled_alpha_material_light" format="float" type="dimen">0.26</item>
     <dimen name="abc_dropdownitem_icon_width">32dp</dimen>
     <dimen name="abc_dropdownitem_text_padding_left">8dp</dimen>
     <dimen name="abc_dropdownitem_text_padding_right">8dp</dimen>
@@ -105,12 +105,12 @@
     <dimen name="design_tab_max_width">264dp</dimen>
     <dimen name="design_tab_text_size">14sp</dimen>
     <dimen name="design_tab_text_size_2line">12sp</dimen>
-    <dimen name="disabled_alpha_material_dark">0.3</dimen>
-    <dimen name="disabled_alpha_material_light">0.26</dimen>
+    <item name="disabled_alpha_material_dark" format="float" type="dimen">0.30</item>
+    <item name="disabled_alpha_material_light" format="float" type="dimen">0.26</item>
     <dimen name="fab_margin">16dp</dimen>
-    <dimen name="highlight_alpha_material_colored">0.26</dimen>
-    <dimen name="highlight_alpha_material_dark">0.2</dimen>
-    <dimen name="highlight_alpha_material_light">0.12</dimen>
+    <item name="highlight_alpha_material_colored" format="float" type="dimen">0.26</item>
+    <item name="highlight_alpha_material_dark" format="float" type="dimen">0.20</item>
+    <item name="highlight_alpha_material_light" format="float" type="dimen">0.12</item>
     <dimen name="intercomsdk_action_item_width">50dp</dimen>
     <dimen name="intercomsdk_cell_padding_admin_left">18dp</dimen>
     <dimen name="intercomsdk_cell_padding_admin_right">12dp</dimen>
@@ -118,19 +118,19 @@
     <dimen name="intercomsdk_cell_padding_left">12dp</dimen>
     <dimen name="intercomsdk_cell_padding_right">18dp</dimen>
     <dimen name="intercomsdk_cell_padding_top">11dp</dimen>
-    <dimen name="intercomsdk_faded_alpha_is_typing">0.4</dimen>
-    <dimen name="intercomsdk_faded_is_typing_duration">200</dimen>
-    <dimen name="intercomsdk_full_alpha">1</dimen>
-    <dimen name="intercomsdk_full_alpha_is_typing">1</dimen>
+    <item name="intercomsdk_faded_alpha_is_typing" format="float" type="dimen">0.40</item>
+    <item name="intercomsdk_faded_is_typing_duration" format="integer" type="dimen">200</item>
+    <item name="intercomsdk_full_alpha" format="integer" type="dimen">1</item>
+    <item name="intercomsdk_full_alpha_is_typing" format="integer" type="dimen">1</item>
     <dimen name="intercomsdk_image_rounded_corners">4dp</dimen>
     <dimen name="intercomsdk_list_indentation">19dp</dimen>
     <dimen name="intercomsdk_local_attachment_upload_size">20dp</dimen>
     <dimen name="intercomsdk_local_image_upload_size">40dp</dimen>
-    <dimen name="intercomsdk_low_alpha">0.6</dimen>
+    <item name="intercomsdk_low_alpha" format="float" type="dimen">0.60</item>
     <dimen name="intercomsdk_max_image_width">153dp</dimen>
     <dimen name="intercomsdk_rowtime_padding_top">2dp</dimen>
-    <dimen name="intercomsdk_scaled_down_is_typing">0.7</dimen>
-    <dimen name="intercomsdk_scaled_up_is_typing">1</dimen>
+    <item name="intercomsdk_scaled_down_is_typing" format="float" type="dimen">0.70</item>
+    <item name="intercomsdk_scaled_up_is_typing" format="integer" type="dimen">1</item>
     <dimen name="item_touch_helper_max_drag_scroll_per_frame">20dp</dimen>
     <dimen name="navigation_drawer_margin">26dp</dimen>
     <dimen name="navigation_drawer_space">8dp</dimen>

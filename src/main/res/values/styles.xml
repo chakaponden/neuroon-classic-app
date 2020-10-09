@@ -6,7 +6,7 @@
         <item name="barLength">18dp</item>
     </style>
     <style name="Widget.Design.TabLayout" parent="Base.Widget.Design.TabLayout">
-        <item name="tabMode">1</item>
+        <item name="tabMode">fixed</item>
         <item name="tabGravity">@null</item>
     </style>
     <style name="Base.Theme.AppCompat.DialogWhenLarge">
@@ -919,7 +919,7 @@
     <style name="Base.Widget.AppCompat.ActionBar" parent="">
         <item name="android:gravity">clip_horizontal</item>
         <item name="height">?attr/actionBarSize</item>
-        <item name="displayOptions">8</item>
+        <item name="displayOptions">showTitle</item>
         <item name="titleTextStyle">@style/TextAppearance.AppCompat.Widget.ActionBar.Title</item>
         <item name="subtitleTextStyle">@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle</item>
         <item name="divider">?attr/dividerVertical</item>
@@ -940,7 +940,7 @@
     </style>
     <style name="Base.Widget.AppCompat.ActionBar.TabBar">
         <item name="divider">?attr/actionBarDivider</item>
-        <item name="showDividers">2</item>
+        <item name="showDividers">middle</item>
         <item name="dividerPadding">8dp</item>
     </style>
     <style name="Base.Widget.AppCompat.ActionMode" parent="">
@@ -955,7 +955,7 @@
         <item name="android:gravity">left|center_horizontal|clip_horizontal</item>
         <item name="android:background">@drawable/abc_ab_share_pack_mtrl_alpha</item>
         <item name="divider">?attr/dividerVertical</item>
-        <item name="showDividers">2</item>
+        <item name="showDividers">middle</item>
         <item name="dividerPadding">6dp</item>
     </style>
     <style name="Base.Widget.AppCompat.Button.ButtonBar.AlertDialog"
